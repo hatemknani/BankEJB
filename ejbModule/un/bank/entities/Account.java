@@ -4,11 +4,14 @@ import java.io.Serializable;
 import java.lang.Long;
 import java.util.Date;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Entity implementation class for Entity: account
  *
  */
+
+@XmlRootElement
 @Entity
 public class Account implements Serializable {
 	   
