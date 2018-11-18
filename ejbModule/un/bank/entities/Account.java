@@ -22,7 +22,17 @@ public class Account implements Serializable {
 
 	public Account() {
 		super();
-	}   
+	}
+	
+	
+	public Account(Long code, double balance, Date dateCreation) {
+		super();
+		this.code = code;
+		this.balance = balance;
+		this.dateCreation = dateCreation;
+	}
+
+
 	public Long getCode() {
 		return this.code;
 	}

@@ -30,7 +30,7 @@ public class BankEJBImpl implements BankLocal, BankRemote{
 
 	@Override
 	public List<Account> listAccounts() {
-		Query qy = em.createQuery("select c from ACCOUNT c");
+		Query qy = em.createQuery("select c from Account c");
 		return qy.getResultList();
 	}
 
