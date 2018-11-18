@@ -10,7 +10,7 @@ import javax.persistence.*;
  *
  */
 @Entity
-public class account implements Serializable {
+public class Account implements Serializable {
 	   
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="account_id_seq")
@@ -20,7 +20,7 @@ public class account implements Serializable {
 	private Date dateCreation;
 	private static final long serialVersionUID = 1L;
 
-	public account() {
+	public Account() {
 		super();
 	}   
 	public Long getCode() {
